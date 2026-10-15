@@ -1,11 +1,9 @@
-import { dialoguesData } from "./dialogues.js";
-console.log("dialoguesData", dialoguesData.dialoguesData);
 //cible les éléments HTML
 const zoneBox = document.querySelector(".zoneBox");
 const nameBox = document.getElementById("nameBox");
 const textBox = document.getElementById("textBox");
 
-let dialogues = [];
+let dialogues = dialoguesData; // Utilise les données importées depuis dialogues.js
 let indexActuel = 0;
 
 //mets le texte a jour dans la boite
@@ -16,15 +14,7 @@ function afficherDialogue() {
   nameBox.textContent = replique.name;
   textBox.textContent = replique.text;
 }
-
-//recupere le JSON et l'affiche
-// fetch("dialogues.json")
-//   .then((reponse) => reponse.json())
-//   .then((donnees) => {
-//     dialogues = donnees;
-//     afficherDialogue();
-//   })
-//   .catch((err) => console.error("Erreur de chargement du JSON :", err));
+afficherDialogue(); // Affiche le premier dialogue au chargement de la page
 
 console.log("plop", dialogues);
 //defilement clic
