@@ -1,0 +1,16 @@
+body {
+  background-color: black; /* ou #000000 */
+  color: white; /* Optionnel : pour assurer la lisibilité du texte */
+  margin: 0;
+}
+.zoneBox {
+  background-color: rgb(188, 108, 108); /* Fond noir avec transparence */
+  align-content: center;
+  border: 1px solid white; /* Bordure blanche */
+  position: fixed;
+  width: 70%;
+  left: 15%;
+  bottom: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+}
